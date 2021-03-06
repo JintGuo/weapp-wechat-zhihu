@@ -1,0 +1,12 @@
+<!--pages/customer_list.wxml-->
+<view>
+  <input focus placeholder="搜索客户" />
+  <button>搜索</button>
+</view>
+<view>
+  <i-cell-group>
+    <i-cell title="客户1" label="标签" is-link></i-cell>
+    <i-cell title="客户2" label="标签2" is-link></i-cell>
+
+  </i-cell-group>
+</view>

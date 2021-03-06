@@ -6,6 +6,8 @@ Page({
   data: {
     feed: [],
     feed_length: 0,
+    // 下拉抽屉, 初始值应该为 false
+    drawer_visible: false,
     markers: [{
       latitude: 39.92,
       longitude: 116.46,
@@ -18,8 +20,54 @@ Page({
         display: 'ALWAYS'
       }
     }],
-
   },
+
+  ////////
+  // 自定义函数
+  ////////
+
+  // 显示客户信息下拉窗
+  show_customer_brif(event) {
+    util.trace_print("show_customer_brif");
+    this.show_drawer();
+  },
+
+  // 显示下拉窗
+  show_drawer() {
+    util.trace_print(!this.data.show_drawer);
+    this.setData({
+      show_drawer: !this.data.show_drawer
+    })
+  },
+
+  navigateTo_customer_list() {
+    util.trace_print("navigateTo_customer_list");
+    wx.navigateTo({
+      url: '../customer_list/customer_list',
+      events: {
+        // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+        acceptDataFromOpenedPage: function(data) {
+          console.log(data)
+        },
+        someEvent: function(data) {
+          console.log(data)
+        }
+      },
+      success: function(res) {
+        // 通过eventChannel向被打开页面传送数据
+        res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
+      }
+    })
+  },
+
+    //// helper 函数
+
+    //
+
+    ////////
+    // 系统事件处理函数
+    ////////
+
   //事件处理函数
   bindItemTap: function () {
     wx.navigateTo({

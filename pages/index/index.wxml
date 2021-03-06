@@ -51,8 +51,7 @@
 
 <view>
     <view>
-        <map id="map" scale="9" bindcontroltap="controltap" markers="{{markers}}"
-            bindmarkertap="markertap" bindregionchange="regionchange" show-location
+        <map id="map" scale="9" markers="{{markers}}" bindmarkertap="show_customer_brif" show-location
             style="width: 100%; height: 580px;"></map>
     </view>
     <cover-view class="cover-view">
@@ -62,7 +61,7 @@
                     <input focus="True" placeholder="我是搜索框" />
                 </cover-view>
                 <cover-view class="flex-item demo-text-2">
-                    <button>客户列表按键</button>
+                    <button bindtap="navigateTo_customer_list">客户列表按键</button>
                 </cover-view>
             </cover-view>
         </cover-view>
@@ -71,9 +70,15 @@
     <cover-view class="cover-view-info">
         <button>未打卡提示框，点击补充打卡</button>
     </cover-view>
-    
+
     <cover-view class="cover-view-pos">
         <icon type="success" />
     </cover-view>
+
+    <i-drawer mode="right" visible="{{drawer_visible}}" bind:close="show_drawer">
+        <view>
+            单击遮罩层关闭
+        </view>
+    </i-drawer>
 
 </view>
