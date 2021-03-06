@@ -5,8 +5,9 @@
 </view>
 <view>
   <i-cell-group>
-    <i-cell title="客户1" label="标签" is-link></i-cell>
-    <i-cell title="客户2" label="标签2" is-link></i-cell>
+    <!-- url 可以带参数如 "../customer_detail/customer_detail？customerID=30" -->
+    <i-cell title="客户1" label="标签" is-link="true" url="../customer_detail/customer_detail" ></i-cell>
+    <i-cell title="客户2" label="标签2" is-link="true" url="../customer_detail/customer_detail"></i-cell>
 
   </i-cell-group>
 </view>

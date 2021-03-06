@@ -1,0 +1,43 @@
+<!--pages/customer_detail/customer_detail.wxml-->
+<view>
+  <view>
+    <!-- 名片图片滑动试图容器 -->
+    <swiper indicator-dots="true">
+      <block wx:for="{{images}}">
+        <swiper-item>
+          <view class="background-{{item}}">image-{{item}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+  <view>
+    <view>
+      客户名称
+    </view>
+    <view>
+      <icon type="waiting" />导航到此处（按钮）
+    </view>
+    <view>
+      地址信息
+    </view>
+
+    <view>电话栏</view>
+    <view>邮箱栏</view>
+    <view>代理品牌栏</view>
+    <view>备注栏</view>
+
+    <view>图片栏</view>
+    <view>
+      打卡记录
+
+    </view>
+
+  </view>
+
+  <view>
+    <cover-view class="clock_in">
+      <button>立即打卡</button>
+    </cover-view>
+  </view>
+</view>

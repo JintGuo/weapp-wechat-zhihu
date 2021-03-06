@@ -1,0 +1,19 @@
+/* pages/customer_detail/customer_detail.wxss */
+
+.background-A {
+  background-color: aqua;
+}
+
+.background-B {
+  background-color: brown;
+}
+
+.background-C {
+  background-color: chocolate;
+}
+
+.clock_in {
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+}
