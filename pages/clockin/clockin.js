@@ -1,11 +1,10 @@
-// pages/customer_detail/customer_detail.js
+// pages/clockin/clockin.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    images: ['A', 'B', 'C'],
 
   },
 
@@ -63,15 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  ////////
-  // 自定义函数
-  ///////
-  // 打开
-  clockin: function() {
-    wx.navigateTo({
-      url: '../clockin/clockin',
-    })
-  },
+  }
 })

@@ -1,0 +1,14 @@
+/* pages/clockin/clockin.wxss */
+
+.picture {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 10%;
+  border-style: dashed;
+}
+
+.clockin_button {
+  display: flex;
+  margin-bottom: 7%;
+  justify-content: center;
+}

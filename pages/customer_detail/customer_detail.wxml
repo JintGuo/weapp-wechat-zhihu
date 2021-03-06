@@ -37,7 +37,7 @@
 
   <view>
     <cover-view class="clock_in">
-      <button>立即打卡</button>
+      <button bindtap="clockin">立即打卡</button>
     </cover-view>
   </view>
 </view>
