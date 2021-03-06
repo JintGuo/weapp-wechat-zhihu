@@ -1,51 +1,5 @@
-# weapp-wechat-zhihu
-
-微信中的知乎--微信小程序 demo // Zhihu in Wechat
-
-![](images/v_index.png)
-
-### description
-- 界面及交互设计来自知乎 Android 版本
-- _工具_: [微信 web 开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1477579747265)
-- _数据_: 没有开放 API, 所以使用伪造本地数据
-
-#### 功能及使用的组件等
-* 列表式渲染数据
-* 自定义顶部 tabbar
-* 下拉刷新
-* 上拉加载更多
-* 轮播图
-<br/>等...
-
-### Setup
-
-```
-git@github.com:RebeccaHanjw/weapp-wechat-zhihu.git
-```
-下载安装Wechat DEV Tools, 并导入项目
-
-### 演示
-
-首页下拉刷新等
-
-![](images/index_scroll.gif)
-
-底部 tab 切换
-
-![](images/bottom_tab.gif)
-
-顶部自定义 tab 切换
-
-![](images/top_tab.gif)
-
-页面跳转
-
-![](images/navigation.gif)
-
-
-##### Demo 用于学习交流, 转载请注明出处
-
-
-
-
-
+# 业务云助手 微信端
+## 参考文档
+- [微信官方开发手册](https://developers.weixin.qq.com/miniprogram/dev/component/) 组件为html组件，api为js调用
+- [微信地图官方手册](https://developers.weixin.qq.com/miniprogram/dev/component/map.html)，链接中为demo小程序，[小程序源码](https://github.com/TencentLBS/TencentMapMiniProgramDemo)
+- [小程序组件开源库 iview-weapp](https://github.com/TalkingData/iview-weapp) [手册](http://inmap.talkingdata.com/wx/index_prod.html#/) 手册中有demo小程序，可以查看效果。注意不要将所有组件都拷贝到代码里面，需要什么再拷贝什么，不然可能导致代码超过8M限制
