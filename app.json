@@ -20,27 +20,27 @@
   },
   "tabBar": {
     "color": "#626567",
-    "selectedColor": "#2A8CE5",
+    "selectedColor": "#242323",
     "backgroundColor": "#FBFBFB",
     "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "打卡地图",
-        "iconPath": "images/index.png",
-        "selectedIconPath": "images/index_focus.png"
+        "iconPath": "images/map/map.png",
+        "selectedIconPath": "images/map/map_on.png"
       },
       {
         "pagePath": "pages/notify/notify",
         "text": "通知",
-        "iconPath": "images/ring.png",
-        "selectedIconPath": "images/ring_focus.png"
+        "iconPath":  "images/map/notice.png",
+        "selectedIconPath": "images/map/notice_on.png"
       },
       {
         "pagePath": "pages/more/more",
         "text": "我的",
-        "iconPath": "images/burger.png",
-        "selectedIconPath": "images/burger_focus.png"
+        "iconPath":"images/map/me.png",
+        "selectedIconPath": "images/map/me_on.png"
       }
     ]
   },

@@ -58,17 +58,18 @@
         <cover-view>
             <cover-view class="flex-wrp" style="flex-direction:row;">
                 <cover-view class="flex-item demo-text-1">
-                    <input focus="True" placeholder="我是搜索框" />
+                    <input focus="True" placeholder="我是搜索框"  />
                 </cover-view>
                 <cover-view class="flex-item demo-text-2">
-                    <button bindtap="navigateTo_customer_list">客户列表按键</button>
+                    <button bindtap="navigateTo_customer_list">客户列表</button>
                 </cover-view>
             </cover-view>
         </cover-view>
     </cover-view>
 
     <cover-view class="cover-view-info">
-        <button>未打卡提示框，点击补充打卡</button>
+        <!-- <button class="cover-view-info-button" >未打卡提示框，点击补充打卡</button> -->
+        <button class="cover-view-info-button" ><span style="padding-left:20rpx">您有 2 条待处理打卡</span></button>
     </cover-view>
 
     <cover-view class="cover-view-pos">
