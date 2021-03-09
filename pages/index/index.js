@@ -4,6 +4,7 @@ var util = require('../../utils/util.js')
 var app = getApp()
 Page({
   data: {
+    searchicon:'../../images/map/search-big.png',
     feed: [],
     feed_length: 0,
     // 下拉抽屉, 初始值应该为 false

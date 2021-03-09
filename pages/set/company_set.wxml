@@ -1,0 +1,48 @@
+
+<view class="container company_set">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+  <view class="page-header">
+    <view class="save" bindtap="action_save" >保存</view>
+  </view>
+  <view class="cover-view-info">
+    <!-- <view class="page__title">资料设置</view> -->
+    <view class="page__title2">公司信息</view>
+    <view class="page__title3">公司全称</view>
+    <input placeholder="请输入公司全称"  class="defaultInput"  value="{{company}}"/>
+    <!-- <input focus="True" placeholder="搜索"  class="search-box" /> -->
+    <view class="page__title3">公司所在地</view>
+    <!-- <input placeholder="请输入公司全称"  class="defaultInput"  value="{{name}}"/> -->
+    <view class='address'>
+      <view class='selectAddress'>
+        <picker mode="selector" range="{{province}}" value="{{provinceIndex}}" bindchange="provincePicker" class='address_province'
+        data-procode="{{provinceCode}}">
+          <text>{{province[provinceIndex]}}</text>
+          <image src='../../images/map/down.png' style='width: 56rpx;height: 56rpx;' class='selecrtImg'></image>
+        </picker>
+        <picker mode="selector" range="{{city}}" value="{{cityIndex}}" bindchange="cityPicker" class='address_province' 
+        data-citycode="{{cityCode}}">
+          <text>{{city[cityIndex]}}</text>
+          <image src='../../images/map/down.png' style='width: 56rpx;height: 56rpx;' class='selecrtImg'></image>
+        </picker>
+        <picker mode="selector" range="{{district}}" value="{{districtIndex}}" bindchange="districtPicker" class='address_province'
+        data-councode="{{districtCode}}">
+          <text>{{district[districtIndex]}}</text>
+          <image src='../../images/map/down.png' style='width: 56rpx;height: 56rpx;' class='selecrtImg'></image>
+        </picker>
+      </view>
+    </view>
+    
+    <view class="page__title3">公司所属行业</view>
+    <input placeholder="请输入公司全称"  class="defaultInput"  value="{{name}}"/>
+    <view class="page__title2" style="padding-top:40px;">账号管理员信息</view>
+    <view class="page__title3">管理员姓名</view>
+    <input placeholder="请输入管理员姓名"  class="defaultInput"  value="{{name}}"/>
+    <view class="page__title3">管理员手机号
+      <view class="change-phone" bindtap="action_change_phone">更换号码</view>
+    </view>
+    <input placeholder="请输入管理员手机号"  class="defaultInput"  value="{{phone}}" disabled="disabled" />
+
+  </view>
+  <!-- <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button> -->
+  </form>
+</view>

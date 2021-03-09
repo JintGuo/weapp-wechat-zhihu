@@ -58,10 +58,13 @@
         <cover-view>
             <cover-view class="flex-wrp" style="flex-direction:row;">
                 <cover-view class="flex-item demo-text-1">
-                    <input focus="True" placeholder="我是搜索框"  />
+                    <image src='{{searchicon}}'  />
+                    <input focus="True" placeholder="搜索"  class="search-box" />
                 </cover-view>
-                <cover-view class="flex-item demo-text-2">
-                    <button bindtap="navigateTo_customer_list">客户列表</button>
+                <cover-view class="flex-item demo-text-2" bindtap="navigateTo_customer_list">
+                    <image src="../../images/map/burger.png"  ></image>
+                    客户
+                    <!-- <button bindtap="navigateTo_customer_list" class="search-button">客户列表</button> -->
                 </cover-view>
             </cover-view>
         </cover-view>
@@ -73,7 +76,7 @@
     </cover-view>
 
     <cover-view class="cover-view-pos">
-        <icon type="success" />
+        <image src="../../images/map/location.png" ></image>
     </cover-view>
 
     <i-drawer mode="right" visible="{{drawer_visible}}" bind:close="show_drawer">

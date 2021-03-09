@@ -1,0 +1,80 @@
+/* pages/more/company_me.wxss */
+.cover-menu{
+ position: absolute;
+ top: 3%;
+ left: calc(76% - 0rpx);
+}
+
+.title{
+  line-height: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #45587A;
+  display: inline;
+  vertical-align: middle;
+  font-weight:800;
+}
+.set-icon{
+  width: 14px;
+  height: 16px;
+  vertical-align: middle;
+}
+.cover-view-info
+{
+  position: absolute;
+  top: 9%;
+  left: calc(25% - 140rpx);
+}
+.page__title
+{
+  width: 240px;
+  height: 33px;
+  font-size: 24px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #242323;
+  line-height: 33px;
+}
+
+.notify-item{
+  width: 680rpx;
+  background: #ffffff;
+  padding: 25rpx 70rpx 35rpx 0rpx;
+  border-bottom: solid 1px #ebebeb ;
+}
+.card-item{
+  width: 630rpx;
+  padding: 15rpx 25rpx 25rpx 0rpx;
+  border-bottom: solid 1px #ebebeb ;
+}
+
+.notify-item  image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+}
+.notify-item .avatar{
+  text-align: left;
+  flex: 2;
+  font-weight: 600;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.notify-item .notify-content{
+  flex: 4;
+  text-align: left;
+}
+.notify-item .notify-content text{
+  display: block;
+}
+.notify-item .notify-content .notify-source{
+  color: #818A8F;
+  font-size: 28rpx;
+  padding: 0 0 8rpx 0;
+}
+.notify-item .notify-content .notify-title{
+  color: #AFAFAF;
+  font-size: 30rpx;
+  line-height: 34rpx;
+}
