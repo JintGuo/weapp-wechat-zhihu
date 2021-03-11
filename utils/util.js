@@ -1,10 +1,6 @@
+
 var app = getApp()
 
-function trace_print(msg) {
-  if (app.globalData.debug) {
-    console.log(msg);
-  }
-}
 
 function formatTime(date) {
   var year = date.getFullYear()
@@ -70,7 +66,6 @@ function discoveryNext(){
 }
 
 
-module.exports.trace_print = trace_print;
 module.exports.getData = getData;
 module.exports.getData2 = getData2;
 module.exports.getNext = getNext;
